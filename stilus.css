@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Verdana, sans-serif;
+    color: beige;
+    font-size: 10pt;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(kepek/black.png);
+}
+
+main{
+    width: 90%;
+    max-height: 900px;
+    margin: auto;
+    background-color: rgb(60, 60, 60);
+}
+
+header{
+    background-image: url(kepek/game.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+nav li:hover{
+    background-color: #ffa500;
+}
+
+nav li a{
+    font-weight: 900;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+article h1, p, ul{
+    text-align: justify;
+   
+}
+
+article h1,p{
+    padding-bottom: 1rem;
+}
+
+article{
+    background-color: rgb(175, 174, 174);
+    padding: 3rem 2rem 1rem 2rem;
+}
+
+footer{
+    padding-top: 3px;
+    height: 1.5rem;
+    background-color: #ffa500;
+}
+
+footer p {
+    text-align: center;
+}
+
+article h1, p, li{
+    color: #000000;
+}
+
+article p,li{
+    font-size: 15px;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+}
+
+article h1{
+    font-size: 18px;
+}
+
+article ul{
+    list-style-type: square;
+    padding-left: 2.5rem;
+}
+
+article img{
+    width: 40%;
+    float: right;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr, auto;
+}
+nav{
+    height: 3rem;
+    display: grid;
+    justify-content: left;
+    align-content: center;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 700px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 50%;
+    }
+    article p, li{
+        letter-spacing: normal;
+    }
+    nav{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+table,td,th {
+    width: 600px;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    color: #000000;
+  }
